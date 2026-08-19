@@ -9,7 +9,7 @@ Windows 桌面工具，透過 HoYoLAB 官方網頁／API 流程處理每日簽�
 - 每日簽到排程、Windows 開機啟動、公開兌換碼輪詢與 Discord Webhook。
 - 兌換碼之間固定間隔 10 秒，執行紀錄不會記錄 Cookie、Token 或 Webhook URL。
 - 「方案與授權」頁提供一次性的 7 天 Premium 選用雲端服務試用；月費 NT$99、年費 NT$599。
-
+教學部分請閱讀HoYo_Daily_Sign-in_使用教學(HoYo_Daily_Sign-in_使用教學)
 ```powershell
 npm install
 npm test
