@@ -10,6 +10,8 @@ Windows 桌面工具，透過 HoYoLAB 官方網頁／API 流程處理每日簽�
 - 兌換碼之間固定間隔 10 秒，執行紀錄不會記錄 Cookie、Token 或 Webhook URL。
 - 「方案與授權」頁可離線驗證 7 天、1 個月與 1 年的 Premium 簽章授權碼；不需後端。
 
+若要看使用教學請前往 [HoYo_Daily_Sign-in_使用教學.docx](HoYo_Daily_Sign-in_使用教學.docx)
+
 ### 免費版與 Premium
 
 | 功能 | 免費版 | Premium／7 天體驗 |
@@ -33,16 +35,6 @@ npm start
 ```powershell
 npm run dist
 ```
-
-## 訂閱後端
-
-`services/licensing-api/` 是需另外部署的服務，負責 ECPay 付款回呼與 PostgreSQL 訂閱資料。所有 ECPay 密鑰只可存在後端環境變數，絕不能置於 Electron 或前端。詳見 [服務設定說明](services/licensing-api/README.md)。
-
-若不部署後端，請使用 [離線授權碼操作指南](docs/OFFLINE_LICENSE_GUIDE.md)。私鑰一律只保存在 `private/`，該資料夾已被 `.gitignore` 排除。
-
-公開發布前必須完成 [公開發布前檢查表](docs/PUBLIC_RELEASE_CHECKLIST.md)，並取得 HoYoverse 對相關自動化與商業發布的書面許可。
-
-正式上線前必須完成 ECPay 測試環境驗證、使用者登入／裝置啟用、取消訂閱／退款流程、隱私權政策與服務條款。
 
 ## 授權
 
