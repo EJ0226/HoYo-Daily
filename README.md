@@ -22,12 +22,6 @@ npm start
 npm run dist
 ```
 
-## 訂閱後端
-
-`services/licensing-api/` 是需另外部署的服務，負責 ECPay 付款回呼與 PostgreSQL 訂閱資料。所有 ECPay 密鑰只可存在後端環境變數，絕不能置於 Electron 或前端。詳見 [服務設定說明](services/licensing-api/README.md)。
-
-正式上線前必須完成 ECPay 測試環境驗證、使用者登入／裝置啟用、取消訂閱／退款流程、隱私權政策與服務條款。
-
 ## 授權
 
 本專案整合 AGPL-3.0 元件，因此整個合併作品依 **GNU Affero General Public License v3.0 or later** 發布。請閱讀 [LICENSE](LICENSE)、`THIRD_PARTY_NOTICES.md`、`THIRD_PARTY_CHANGES.md` 與 `THIRD_PARTY_LICENSES/`。
